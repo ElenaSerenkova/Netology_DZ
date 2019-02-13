@@ -1,0 +1,10 @@
+Оконные функции
+SELECT
+  userId, movieId, rating, normed_rating, avg_rating
+  OVER (
+   rating - MIN(rating) OVER (PARTITION BY userId))/(MAX(rating) OVER (PARTITION BY userId)) normed_rating
+   rating - AVG(rating) OVER (PARTITION BY userId) avg_rating)
+   ORDER BY normed_rating, avg_rating
+   LIMIT 30;
+   
+   
