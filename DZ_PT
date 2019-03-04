@@ -1,0 +1,41 @@
+long_phrase = 'Насколько проще было бы писать программы, если бы не заказчики'
+short_phrase = '640Кб должно хватить для любых задач. Билл Гейтс (по легенде)'
+if len(long_phrase) > len(short_phrase):
+    print(True)
+else:
+    print(False)
+text = 'Если программист в 9-00 утра на работе, значит, он там и ночевал'
+text.count ("а")
+print (text.count("а"))
+text.count ("и")
+print (text.count("и"))
+if text.count("а")>text.count("и"):
+    print(True)
+else:
+    print(False)
+
+units = input("Выберите единицы измерения:\n \
+\t1 - байты,\n \
+\t2 - килобайты,\n \
+\t3 - мегабайты,\n \
+\t4 - гигабайты.\n№: ")
+qty = float(input("Введите значение: "))
+if units == '1':
+	print("Килобайты: %10.3f" % (qty / 2**10))
+	print("Мегабайты: %10.3f" % (qty / 2**20))
+	print("Гигабайты: %10.3f" % (qty / 2**30))
+elif units == '2':
+	print("Байты: %14d" % (qty * 2**10))
+	print("Мегабайты: %10.3f" % (qty / 2**10))
+	print("Гигабайты: %10.3f" % (qty / 2**20))
+elif units == '3':
+	print("Байты: %14d" % (qty * 2**20))
+	print("Килобайты: %10d" % (qty * 2**10))
+	print("Гигабайты: %10.3f" % (qty / 2**10))
+elif units == '4':
+	print("Байты: %14d" % (qty * 2**30))
+	print("Килобайты: %10d" % (qty * 2**20))
+	print("Мегабайты: %10d" % (qty * 2**10))
+import math
+x = math.sin (math.radians (30))
+print (x)
